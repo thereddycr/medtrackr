@@ -210,7 +210,6 @@ const ViewAppointment = () => {
                         <td>{appointment.address}</td>
                         <td>{appointment.selectedDate}</td>
                         <td>{appointment.timeSlot}</td>
-                        {/* <td>{appointment.comment}</td> */}
                         <td>
                           <button
                             className="btn btn-sm update "
