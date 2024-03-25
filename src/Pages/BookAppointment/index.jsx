@@ -269,7 +269,6 @@ const BookAppointment = () => {
 
       const existingBookings = await AsyncStorage.getItem("bookings");
       let bookings = [];
-
       if (existingBookings) {
         bookings = JSON.parse(existingBookings);
       }
