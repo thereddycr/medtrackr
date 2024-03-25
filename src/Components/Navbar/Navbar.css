@@ -1,0 +1,84 @@
+.navbar-logo {
+  color: #007bff;
+}
+
+.change-lang {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: fit-content;
+
+}
+.navbar .containNavbar a {
+  color: #04938B !important;
+  text-decoration: none !important;
+}
+.navbar a span{
+  color: #04938B;
+}
+
+.Navbar-container {
+  width: calc(100% - 250px);
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+}
+
+.navbarBrand {
+  max-width: 140px;
+}
+
+.Navbar-container a {
+  text-decoration: none;
+}
+
+.change-lang:hover {
+  background-color: #0069d9;
+}
+
+.user-profile-img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.Navbar-container button,
+.button-search,
+.btn-edit-profile {
+  display: block;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.Navbar-container button:hover {
+  background-color: #0069d9;
+}
+/* .dropdown-menu[data-bs-popper] {
+  top: 111%;
+  left: -51px;
+  margin-top: var(--bs-dropdown-spacer);
+} */
+
+.navbar{
+   position: fixed;
+   z-index: 10;
+   top: 0px;
+   /* width: calc(100vw - 250px); */
+   width: 100vw;
+   /* margin-left:250px; */
+   background-color: white;
+   padding: 15px 10px 15px 0px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.navbar .dropdown-menu[data-bs-popper] {
+  top: 115%;
+  left: -65px;
+}

@@ -1,0 +1,9 @@
+
+.main-wrapper{
+   margin-left:269px;
+   width:calc(100vw - 270px);
+   margin-top: 100px;
+} 
+body{
+    background-color: #F5F6FA; 
+}

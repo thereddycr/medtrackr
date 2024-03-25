@@ -1,0 +1,280 @@
+@import '~font-awesome/css/font-awesome.min.css';
+ select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #04938B;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ select {
+    position: relative;
+    display: flex;
+    height: 3em;
+    line-height: 3;
+    background: #04938B;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+
+ select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #04938B;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ select:hover::after {
+    color: #23b499;
+ }
+table {
+  border: 2px solid #04938B !important; /* Change the color value to your desired color */
+}
+
+/* Apply color to table cell borders */
+td, th {
+  border: 1px solid #04938B !important; /* Change the color value to your desired color */
+}
+ 
+ .add{
+   background:#04938b;
+   color: #ffffff;
+ }
+
+ .add:hover{
+   background:#04938b;
+   color: #ffffff;
+ }
+
+ .table th {
+   background:#04938b !important;
+   color: #ffffff !important;
+}
+.close{
+   background:#04938b !important;
+   color: #ffffff !important;
+   border-radius: 120px;
+
+}
+
+
+
+::-webkit-scrollbar {
+   width: 9px; 
+ }
+ 
+ 
+ ::-webkit-scrollbar-thumb {
+   background:#ccc; 
+   border-radius: 5px; 
+ }
+ 
+ 
+ ::-webkit-scrollbar-track:hover {
+   background: #ccc; 
+ }
+ 
+
+ ::-webkit-scrollbar-thumb:hover {
+   background: #555; 
+ }
+
+
+ 
+
+.view {
+   background-color: #e0f6f6 !important;
+   color: #4b6c70 !important;
+ }
+ 
+ .view:hover {
+   background-color: #e0f6f6 !important;
+   color: #4b6c70 !important;
+ }
+
+
+
+  .update{
+   background-color: #e2f6ed !important;
+   color: #2caf48 !important;
+ }
+ 
+
+ .update:hover{
+   background-color: #e2f6ed !important;
+   color: #2caf48 !important;
+ }
+
+ .delete:hover {
+   background-color: #fde2e7 !important;
+   color: #ea3c5d !important;
+ }
+
+  
+  .delete {
+   background-color: #fde2e7 !important;
+   color: #ea3c5d !important;
+ }
+
+ .save{
+   background-color: #024945 !important;
+   color: #ffffff !important;
+
+ }
+ .save-enable{
+   
+  background:#04938b !important;
+  color: #ffffff !important;
+
+ }
+ button:hover{
+  background-color: #037c70  !important;   
+  color:#ffffff !important    
+ }
+ select:hover{
+  background-color: #037c70  !important;
+ }
+.modal-body .label{
+   color: black !important;
+}
+.star{
+  color: red;
+}
+
+
+ /* .color-heading{
+
+  color:#F97B22 !important;
+  font-size: 18px !important;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page-heading{
+  color:#F97B22 !important;
+  font-size: 18px !important;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ */
+
+
+
+/* Media Query for screens up to 1600px */
+@media screen and (max-width: 1600px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+  span {
+    font-size: 14px;
+  }
+  a {
+    font-size: 16px;
+  }
+  .card{
+    padding: 10px !important;
+  }
+}
+
+/* Media Query for screens up to 1400px */
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  span {
+    font-size: 12px;
+  }
+  a {
+    font-size: 14px;
+  }
+  .card{
+    padding: 10px !important;
+  }
+}
+
+/* Media Query for screens up to 1200px */
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  span {
+    font-size: 10px;
+  }
+  a {
+    font-size: 12px;
+  }
+  .card{
+    padding: 10px !important;
+  }
+}
+

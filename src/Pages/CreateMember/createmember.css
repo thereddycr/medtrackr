@@ -1,0 +1,12 @@
+.preview img, td img{
+    height: 100px;
+    width: 100px;
+}
+
+.form-container {
+    padding: 1rem 3rem;
+}
+
+.form-field {
+    margin: 0.5rem 0;
+}

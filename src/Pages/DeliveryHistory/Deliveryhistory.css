@@ -1,0 +1,56 @@
+.delivery-btn{
+  border: none;
+  color: white;
+  font-size: 22px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.page-holder {
+  padding: 1rem;
+}
+
+.table-container {
+  padding: 0.5rem;
+}
+
+.page-holder h2 {
+  margin-bottom: 1rem;
+}
+
+.filters {
+  padding: 0.5rem
+}
+.imageFullView img{
+  height: 300px;
+
+}
+.reportsImages img{
+  height: 50px;
+}
+.delivery-btn a{
+  text-decoration: none;
+  color: white;
+}
+.deli-button{
+background-color: rgb(165, 122, 42);
+}
+.routes-button{
+  background-color: rgb(132, 165, 42);
+  
+}
+.track-button{
+  background-color: rgb(42, 165, 97);
+  
+}
+.staff-button{
+  background-color: rgb(42, 165, 159);
+  
+}
+.patient-button{
+  
+  background-color: rgb(42, 54, 165);
+}
+.report-button{
+  background-color: rgb(165, 42, 155);
+}

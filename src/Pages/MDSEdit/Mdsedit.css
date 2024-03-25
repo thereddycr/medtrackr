@@ -1,0 +1,14 @@
+.page-container {
+  padding: 1rem;
+}
+
+
+.form-field {
+  margin: 0.5rem 0;
+}
+.mdss .modal-body label{
+  color: #F97B22
+}
+.mdsActive {
+  background-color: #012c2a;
+}

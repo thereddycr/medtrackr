@@ -1,0 +1,600 @@
+/* Add this to your HomePage.css or create a new CSS file and import it */
+
+/* Styles for the WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 25px; 
+  right: 25px; 
+}
+
+.whatsapp-button button {
+  background-color: #05b1a8; 
+  color: white;
+  border: none;
+  border-radius: 30%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button button:hover {
+  background-color: #128c7e; 
+}
+
+.whatsapp-button i {
+  font-size: 36px;
+}
+
+.logo{
+  width: 200px !important;
+
+}
+.home-nav{
+   background-color: #ffffff !important;
+
+}
+.home-nav  .navbar{
+  background-color: #ffffff;
+  box-shadow: 3px 3px 22px rgba(0, 0, 0, .08);
+  padding: 20px 30px 20px 0px;
+}
+.home-nav ul{
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+.home-nav ul:hover{
+  font-size: 20px;
+  color: #024945;
+  font-weight: 500;
+}
+
+
+.home-nav  .btn-login{
+  background-color: #024945;
+  color: white;
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 30px;
+
+
+}
+.home-nav .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+:not(.btn-check)+.btn:active {
+  color:white;
+  background-color: #024945;
+  
+}
+.btn-login:hover {
+  background-color: #024945;
+  color: white;
+}
+.navbar-toggler-icon {
+  background-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23024945' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+/* Navbar End */
+
+/* Middle Start */
+.delivery-box{
+  background-color: #024945;
+  color: #F1EFEF;
+  padding: 35px;
+  font-size: 20px;
+  list-style: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 22px rgba(0, 0, 0, .08);
+  min-height: 70px;
+  
+}
+.del-box{
+  background-color: #024945;
+  color: black !important;
+  padding: 35px;
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 22px rgba(0, 0, 0, .08);
+  min-height: 170px;
+
+}
+
+
+.delivery-heading{
+   font-size: 40px;
+   font-weight: bold;
+   color:#024945;
+  margin-top: 80px;
+
+}
+
+
+.aid-img{
+  height: 6x00px;
+
+}
+
+
+.MDS-box{
+  background-color: #024945;
+  color: #F1EFEF;
+  padding: 70px;
+  list-style: none;
+  font-size: 22px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 22px rgba(0, 0, 0, .08);
+  min-height: 420px;
+
+} 
+
+.Reports{
+
+  background-color: #024945;
+  color: #F1EFEF;
+  padding: 25px;
+  list-style: none;
+  font-size: 22px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 22px rgba(0, 0, 0, .08);
+
+
+
+}
+.reports p{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+
+.delivery-img{
+   
+   max-width: 550%;
+   height: auto;
+  
+}
+
+/* Middle End */
+.footer{
+  background-color: #024945;
+  
+}
+.footer h1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F1EFEF;
+}
+.footer li{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #F1EFEF;
+    list-style: none;
+}
+.footer p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:  #F1EFEF;
+  list-style: none;
+}
+
+
+
+.footer h2{
+font-size: 12px;
+font-weight: 300;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #F1EFEF;
+;
+
+}
+hr{
+  
+  height: 2px;
+  background-color:#F1EFEF;
+
+}
+.footer .footer-lower ul{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer .footer-lower li{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.custom-padding{
+  padding-left: 2px;
+
+} 
+.custom-padding{
+  padding-left: 170px;
+
+} 
+/* services start */
+.services{
+  background-color: #ffffff;
+  padding: 50px  0px;
+  
+
+}
+.services h1{
+   font-size: 48px;
+  padding: 10px 200px;
+  font-weight: 500;
+}
+.services p{
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 10px 340px;
+  line-height: 30px;
+
+}
+
+.services .services-box{
+   background-color: #07BFB5;
+   padding: 14px;
+   border-radius: 15px;
+   min-height: 70px;
+   min-width: 70px;
+
+}
+.services .services-text{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+
+
+.delivery-features-main{
+
+    padding: 50px 0px 70px   0px;
+
+}
+
+
+
+
+
+.delivery-features {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  background: linear-gradient(to top, #AABBCD, transparent);
+  border-radius: 50%;
+  
+}
+
+.delivery-features h2{
+   font-size: 20px;
+   font-weight:500;
+   color:#1E1E1E;
+
+}
+.delivery-features h1{
+  font-size: 48px;
+  font-weight: 500;
+
+}
+.delivery-features .delivery-box{
+   background-color: #ffffff;
+   min-height: 300px;
+
+}
+
+.delivery-box-inner{
+
+   padding: 12px 43px;
+}
+
+.delivery-features-main .img-fluid{
+   width: 75%;
+
+}
+
+.delivery-image-wrapper{
+   position: relative;
+   bottom: 270px;
+
+}
+.delivery li{
+  color: #1E1E1E !important;  
+}
+
+
+
+.booking{
+ padding: 80px 0px 50px 0px;
+
+}
+
+.booking .apointment-span{
+       font-size: 22px;
+       font-weight: bold;
+       background-color: #E9F6F5;
+       color:#07BFB5;
+       padding: 15px 25px;   
+       border-radius: 25px;
+}
+.booking h1{
+    font-size: 48px;
+    font-weight: 500;
+
+}
+.booking p{
+   font-size: 20px;
+   
+}
+
+
+
+.delivery span{
+
+  font-size: 22px;
+       font-weight: bold;
+       background-color: #E9F6F5;
+       color:#07BFB5;
+       padding: 15px 25px;   
+       border-radius: 25px;
+
+}
+.del .delivery-heading{
+
+        font-size: 22px;
+       font-weight: bold;
+       background-color: #E9F6F5;
+       color:#07BFB5;
+       padding: 15px 25px;   
+       border-radius: 25px;
+
+}
+.del span{
+  list-style: none;
+  font-size: 20px !important;
+}
+.booking  span{
+  list-style: none;
+  font-size: 20px !important; 
+}
+
+
+.delivery li{
+   list-style: none;
+}
+
+.delivery .del-box{
+   background-color: black;
+
+}
+
+.delivery{
+    background-color: #ffffff;
+}
+.img-delivery{
+   max-width: 100%;
+   height: 100%;
+
+}
+
+.mds{
+    padding: 60px 0px 60px 0px;
+    background-color: #ffffff;
+  
+
+}
+
+.mds span{
+
+  font-size: 22px;
+       font-weight: bold;
+       background-color: #E9F6F5;
+       color:#07BFB5;
+       padding: 12px 60px;   
+       border-radius: 25px;
+}
+
+.mds h2{
+   font-size: 48px;
+   color: #1E1E1E;
+   
+}
+
+.mds h3{
+  
+  font-size: 20px;
+  
+  color:#1E1E1E;
+
+}
+
+.mds p{
+  
+  font-size: 20px;
+  color:#1E1E1E;
+  
+
+}
+.mds li{
+   font-size: 20px;
+   list-style: none;
+
+}
+
+.del h1{
+  font-size: 48px;
+   color: #1E1E1E;
+}
+
+.reports{
+  padding: 60px 0px 50px 0px;
+}
+
+.reports span{
+
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #E9F6F5;
+  color:#07BFB5;
+  padding: 12px 60px;   
+  border-radius: 25px;
+  
+}
+
+.reports h2{
+
+  font-size: 48px;
+  color: #1E1E1E;
+
+}
+
+.costumer span{
+  
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #E9F6F5;
+  color:#07BFB5;
+  padding: 12px 60px;   
+  border-radius: 25px;
+  
+} 
+
+Link{
+  list-style: none;
+  text-decoration: none;
+  color: #1E1E1E;
+
+}
+.tick{
+   color: #05b1a8;
+}
+
+.home-nav  .nav-link{
+  color: #05b1a8;    
+}
+
+
+.hero .Download{
+  color: #4A7973;
+  font-family: Open Sans;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+
+}
+.hero-btn{
+  background-color: #4A7973;
+  min-height: 68px;
+  min-width: 200px;
+}
+
+
+
+
+/* services end */
+@media (max-width: 1400px) {
+
+
+
+
+  .custom-padding{
+    padding-left: 0px;
+  
+  } 
+
+  .services h2{
+    font-size: 48px;
+   padding: 0px;
+ 
+ }
+
+ .delivery-features {
+  /* padding-top: 20px;
+  padding-bottom: 150px; */
+  background: none;
+  border-radius: 0%;
+}
+
+ .services p{
+  font-size: 20px;
+  font-weight: normal;
+   margin-top: 20px;
+  padding: 0px; 
+
+}
+ 
+}
+
+@media  screen and (max-width: 992px) {
+
+  .services{
+     padding-top: 29px;
+    padding-bottom: 29px; 
+  
+  }
+  .services h1{
+   
+   padding: 0px;
+   
+ }
+
+  .home-nav .btn-login {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 15px;
+}
+.logo {
+  width: 150px !important;
+}
+.footer .footer-lower li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+ 
+.delivery-box-inner{
+
+  padding: 25px;
+}
+
+.booking{
+  /* padding-bottom: 150px;
+  margin-top: -100px; */
+
+}
+ 
+.delivery-features {
+  /* padding-top: 20px;
+  padding-bottom: 0px; */
+  background: none;
+  border-radius: 0%;
+}
+
+
+
+}

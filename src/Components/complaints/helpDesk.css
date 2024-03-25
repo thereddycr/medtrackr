@@ -1,0 +1,10 @@
+.help-desk-page{
+    height: 100vh;
+}
+.help-desk-page textarea{
+    width: 100%;
+    height: 40vh;
+}
+.help-desk-page button{
+    width: fit-content;
+}

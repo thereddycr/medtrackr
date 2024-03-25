@@ -1,0 +1,25 @@
+.date-select p{
+  margin-bottom: 0px !important;
+  color: rgb(255, 255, 255)  !important;
+}
+.date-select{
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  background-color : rgb(48, 103, 253);
+  width: fit-content;
+  padding: 15px 25px;
+  box-shadow: 0 8px 16px rgba(206, 206, 206, 0.1);
+  border-radius: 6px;
+  display: flex;
+  justify-content: end;
+}
+
+.page-holder {
+  padding: 1rem;
+}
+
+
+.filters {
+  margin: 0.5rem 0;
+}

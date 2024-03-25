@@ -1,0 +1,148 @@
+/* ContactForm.css */
+.contact-form-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+
+  .contact-form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+  }
+  
+  .contact-form-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form-container label {
+    display: block;
+    font-weight: bold;
+    
+
+  }
+  
+  .contact-form-container input,
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 5px;
+    /* margin: 5px 0; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form-container button {
+    background:#04938B ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .contact-form-container button:hover {
+    background:#04938B  ;
+  }
+  .login-container .card{
+     padding: 40px;
+
+  }
+  .login-container .arrow{
+
+    color: #fff !important;
+  }
+
+  
+  .login-container .left{
+    background:#04938B;  
+    color:#ffffff;
+    max-height: 590px;
+    max-width: 430px;
+    padding: 50px !important;
+  }
+  .login-container .card-body{
+       box-sizing: border-box;
+  } 
+
+  
+  .login-container .right{
+    max-height: 590px;
+    max-width: 800px;     
+    padding: 50px !important;
+    
+ }
+ .contactUs-container {
+  height: 70vh;
+}
+
+ .login-container .left p{
+      line-height: 30px;
+
+ }
+
+ .login-container .card{
+
+    border-radius: 0px !important;
+ } 
+ 
+ .icon-wrapper{
+  border: 1px solid #f9f9f9;
+  opacity: 0.5;
+  padding: 15px;
+  border-radius: 30px;
+ }
+ .login-container .left .card-paragraph{
+   color:#e1fdfd;
+   font-size: 18px;
+
+ }
+ .label-heading{
+  color: black !important;
+
+ }
+ #message{
+
+  width: -webkit-fill-available;
+ }
+ .email-send{
+     background-color:#04938B ;
+     color: #ffff;
+
+ }
+
+
+ @media screen and (max-width: 992px) {
+  .contact-form-container {
+    display: flex;
+    width: 100vw;
+    
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    }
+
+  .login-container .left{
+    max-height: none;
+    max-width: none;
+    padding: 30px !important;
+    
+     
+  }
+  .login-container .right{
+    max-height: none;
+    max-width: none;
+    padding: 30px !important;
+   
+     
+ }
+
+
+  
+}

@@ -1,0 +1,64 @@
+.sidebar-main {
+  background-color: #024945;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 263px;
+  overflow: hidden;
+  z-index: 30;
+}
+
+
+.brand-logo {
+  color: white;
+}
+
+.dropdown-item a {
+  color: black !important;
+}
+
+.sidebar-ul li {
+  list-style: none;
+  margin: 0.2rem 0;
+  padding: 0.2rem 0;
+}
+
+.sidebar-ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-ul i {
+  margin-right: 10px;
+}
+
+.nav-item {
+  color: white;
+}
+
+.med-png{
+   width: 230px;
+
+}
+
+.sidebar-logo{
+   margin-left: 10px;
+    max-width: 85%;
+    height: auto;
+}
+
+
+
+
+.active {
+  color:#F97B22 !important;
+  font-weight: bold; 
+}
