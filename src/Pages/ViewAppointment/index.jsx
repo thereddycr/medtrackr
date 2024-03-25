@@ -73,7 +73,7 @@ const ViewAppointment = () => {
 
   const handleDelete = async () => {
     const updatedAppointments = details.filter(
-      (appointment) => appointment.id !== selectedRow.id
+      (appointment) => appointment.b_id !== selectedRow.b_id
     );
 
     setIsDetails(updatedAppointments);
@@ -165,7 +165,7 @@ const ViewAppointment = () => {
                         )
                         .map((customer) => (
                           <div
-                            key={customer.id}
+                            key={customer.b_id}
                             className="dropdown-item"
                             onClick={() => handleCustomerClick(customer)}
                           >
@@ -203,7 +203,7 @@ const ViewAppointment = () => {
                           selectedCustomer.toLowerCase()
                     )
                     .map((appointment) => (
-                      <tr key={appointment.id}>
+                      <tr key={appointment.b_id}>
                         <td>{appointment.customername}</td>
                         <td>{appointment.name}</td>
                         <td>{appointment.mobile}</td>

@@ -3,6 +3,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ClipLoader } from "react-spinners";
 import { FaArrowRight, FaRegCircle } from "react-icons/fa";
 import Calendar from "react-calendar";
+import { v4 as uuidv4 } from "uuid";
 import { css } from "@emotion/react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -13,6 +14,7 @@ const BookAppointment = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isLocation = location?.state?.selectedAppointment;
+  console.log(isLocation, "isLocation");
   const [isLoading, setIsLoading] = useState(false);
   const [appointments, setAppointments] = useState([]);
   const [customersData, setCustomersData] = useState([]);
@@ -126,6 +128,26 @@ const BookAppointment = () => {
       try {
         if (isLocation) {
           setSelectedAppointment(isLocation);
+          const {
+            address,
+            comment,
+            customername,
+            dob,
+            email,
+            mobile,
+            postCode,
+            title,
+          } = isLocation;
+          setSelectedCustomer({
+            address,
+            comment,
+            customername,
+            dob,
+            email,
+            mobile,
+            postCode,
+            title,
+          });
         }
         const appointmentsData = await AsyncStorage.getItem("appointments");
         if (appointmentsData !== null) {
@@ -174,6 +196,7 @@ const BookAppointment = () => {
     }
 
     const bookingDetails = {
+      b_id: uuidv4(),
       ...selectedCustomer,
       name: selectedAppointment.name,
       slotDuration: selectedAppointment.slotDuration,
@@ -206,9 +229,6 @@ const BookAppointment = () => {
         }
 
         if (!sameDate && sameTimeSlot) {
-          toast.error(
-            "A booking with the same time slot already exists on a different date"
-          );
           return false;
         }
 
@@ -273,21 +293,46 @@ const BookAppointment = () => {
         bookings = JSON.parse(existingBookings);
       }
 
+      const isDuplicate = bookings.some((booking) => {
+        const sameDate = booking.selectedDate === updatedBookingDetails.selectedDate;
+        const sameTimeSlot = booking.timeSlot === updatedBookingDetails.timeSlot;
+        const sameCustomer =
+          booking.customername === updatedBookingDetails.customername;
+        const sameAppointment = booking.name === updatedBookingDetails.name;
+
+        if (sameDate && sameTimeSlot && sameCustomer && sameAppointment) {
+          return true;
+        }
+
+        if (!sameDate && sameTimeSlot) {
+          return false;
+        }
+
+        return false;
+      });
+
+      if (isDuplicate) {
+        toast.error(
+          "Booking already exists with this date, time slot, customer, and appointment"
+        );
+        return;
+      }
+
       const updatedBookings = bookings.map((booking) =>
-        booking.name === selectedAppointment.name
+        booking.b_id === selectedAppointment.b_id
           ? updatedBookingDetails
           : booking
       );
 
       await AsyncStorage.setItem("bookings", JSON.stringify(updatedBookings));
       setIsDetails(updatedBookings);
-      navigate(-1);
 
       setModal(false);
       setSelectedAppointment(null);
       setSelectedCustomer(null);
       setSearchText("");
       setSelectedTS("");
+      navigate(-1);
 
       toast.success("Booking updated...", {
         position: "top-right",
@@ -657,8 +702,8 @@ const BookAppointment = () => {
                     type="search"
                     name="customername"
                     required
-                    disabled={addNewCustomer}
-                    value={searchText}
+                    disabled={isLocation || addNewCustomer}
+                    value={isLocation ? isLocation?.customername : searchText}
                     placeholder="Search Customer"
                     onChange={handleInputChange}
                     onFocus={handleFocus}
@@ -671,6 +716,7 @@ const BookAppointment = () => {
                     onClick={() => {
                       setIsAddNewCustomer(!addNewCustomer);
                     }}
+                    disabled={isLocation}
                   >
                     {addNewCustomer ? "-" : "+"}
                   </button>
